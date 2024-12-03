@@ -10,10 +10,8 @@ public class Enemigo : MonoBehaviour
     int puntosGanados = 1;
     private void OnParticleCollision(GameObject other)
     {
-        if(other.tag == "Arma")
-        {
-            ProcesarGorpe();
-        }
+        ProcesarGorpe();
+        
     }
     void ProcesarGorpe()
     {
@@ -21,6 +19,7 @@ public class Enemigo : MonoBehaviour
         if (gorpesNecesarios <= 0)
         {
             Instantiate(explosion, this.transform.position, Quaternion.identity);
+            FindAnyObjectByType<Scoreboard>().añadirPuntuacion(puntosGanados);
             Destroy(this.gameObject);
         }
     }

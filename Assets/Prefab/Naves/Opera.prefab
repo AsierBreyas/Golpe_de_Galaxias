@@ -92,7 +92,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 483659775043542460, guid: 180883df1673639459be1f5b413c0633, type: 3}
       propertyPath: gorpesNecesarios
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 763042581919826940, guid: 180883df1673639459be1f5b413c0633, type: 3}
       propertyPath: m_Name
