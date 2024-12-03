@@ -10,6 +10,7 @@ public class Scoreboard : MonoBehaviour
     TextMeshProUGUI textoPuntuacion;
     [SerializeField]
     TextMeshProUGUI textoSuma;
+    int sumandoPuntuacion;
 
     private void Start()
     {
@@ -21,14 +22,16 @@ public class Scoreboard : MonoBehaviour
     public void añadirPuntuacion(int puntosGanados)
     {
         puntuacion += puntosGanados;
+        sumandoPuntuacion =+ puntosGanados;
         textoSuma.gameObject.SetActive(true);
-        textoSuma.text = "+ " + puntosGanados;
+        textoSuma.text = "+ " + sumandoPuntuacion;
         StartCoroutine(ActualizarTexto(puntosGanados));
     }
     IEnumerator ActualizarTexto(int puntosGanados)
     {
         yield return new WaitForSecondsRealtime(1f);
         textoSuma.gameObject.SetActive(false);
+        sumandoPuntuacion = 0;
         textoPuntuacion.text = puntuacion + "";
     }
 }
