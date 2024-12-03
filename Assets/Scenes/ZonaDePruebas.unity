@@ -2230,7 +2230,7 @@ GameObject:
   - component: {fileID: 1763953243}
   - component: {fileID: 1763953242}
   m_Layer: 5
-  m_Name: Mackey
+  m_Name: Goofy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2608,25 +2608,30 @@ PlayableDirector:
     m_References:
     - 86965596bcf5e4c4b8affba41da393df: {fileID: 1035595818}
     - 1d1c240188192614381fabfdbdab731e: {fileID: 1035595818}
+    - 26b36a8f6a0eda54a911c515dab8bd2f: {fileID: 515669865}
     - 1493a0aab942c4647a4221694f97ce0d: {fileID: 99244711}
     - 85ad5501589111d41a8b1d1e983397c5: {fileID: 1979885925}
     - a2fca42b14b659a49bbfb604c52ab090: {fileID: 99244711}
     - 0b106d3fac4b3464db01f79958921254: {fileID: 99244711}
     - efe8098f30e176c4fb969756a75b6164: {fileID: 99244711}
     - 31ef62f14c9c0ac478d91a6310075670: {fileID: 99244711}
+    - e86943e26e35e91418f75aafd899fd7f: {fileID: 515669865}
     - 79d5afefc05769944bfda9d3c5d61393: {fileID: 1035595818}
     - 5392d6c9ca4c87444a4b44aec93d4f73: {fileID: 99244711}
     - c19f4f1290e71e84595fb9491712a07b: {fileID: 99244711}
     - f8f1939ee135c10499ec5a0607089cc4: {fileID: 1035595818}
     - efc6aad3d54c1eb4c84c770d0c17f765: {fileID: 1035595818}
+    - c0d9cf159f22da74e9c5d772cd7bc0d8: {fileID: 515669865}
     - d8eb3cb1a725da1458021b3f0dde717b: {fileID: 1035595818}
     - 6432b175a7549cc4ca88156183d24a23: {fileID: 1035595818}
+    - 18ee34e51fb30f448ab57935ad135666: {fileID: 99244711}
     - 74bba316e49adc14eb869e590dc1f4c0: {fileID: 99244711}
     - 454c24986f298f54eba71c8714303d48: {fileID: 99244711}
     - 2f4232d8f6a5b3e4aa5fe67fe8e75277: {fileID: 1514599950}
     - d77d1a87a97fc8d4fad4d48f31f72f35: {fileID: 99244711}
     - 40bcec1ed1f16c7479753742135157c6: {fileID: 1035595818}
     - 939f35effde80b44a852f732e3ef01ba: {fileID: 99244711}
+    - 2f942c0e30cd0db4ca81095268bb2f36: {fileID: 515669865}
 --- !u!4 &2138081518
 Transform:
   m_ObjectHideFlags: 0
