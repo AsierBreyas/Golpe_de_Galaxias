@@ -8,6 +8,8 @@ public class Enemigo : MonoBehaviour
     int gorpesNecesarios = 2;
     [SerializeField]
     int puntosGanados = 1;
+    [SerializeField]
+    AudioClip matarEnemigo;
     private void OnParticleCollision(GameObject other)
     {
         ProcesarGorpe();
@@ -21,6 +23,7 @@ public class Enemigo : MonoBehaviour
             Instantiate(explosion, this.transform.position, Quaternion.identity);
             FindAnyObjectByType<Scoreboard>().añadirPuntuacion(puntosGanados);
             Destroy(this.gameObject);
+            AudioSource.PlayClipAtPoint(matarEnemigo, Camera.main.transform.position,10);
         }
     }
 }

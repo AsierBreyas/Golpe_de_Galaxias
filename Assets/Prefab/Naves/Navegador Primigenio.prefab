@@ -47,6 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1890811500908281477, guid: 746d7dd67a7574f43a3d83edb3f8a046, type: 3}
+  gorpesNecesarios: 2
+  puntosGanados: 1
+  matarEnemigo: {fileID: 8300000, guid: 1182f28c5aecfc84aae8ec84433bbc9a, type: 3}
 --- !u!65 &8628842363811560478
 BoxCollider:
   m_ObjectHideFlags: 0
