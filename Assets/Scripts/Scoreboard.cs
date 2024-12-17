@@ -22,7 +22,7 @@ public class Scoreboard : MonoBehaviour
     public void añadirPuntuacion(int puntosGanados)
     {
         puntuacion += puntosGanados;
-        sumandoPuntuacion =+ puntosGanados;
+        sumandoPuntuacion += puntosGanados;
         textoSuma.gameObject.SetActive(true);
         textoSuma.text = "+ " + sumandoPuntuacion;
         StartCoroutine(ActualizarTexto(puntosGanados));

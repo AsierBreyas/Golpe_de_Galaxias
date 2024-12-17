@@ -1,0 +1,643 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7022539546276664207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db920e62f70f420bb33c771449926fa4, type: 3}
+  m_Name: NaveBehaviourGraph
+  m_EditorClassIdentifier: 
+  Graphs:
+  - rid: 1186182123318411827
+  RootGraph:
+    rid: 1186182123318411827
+  m_DebugInfo: {fileID: -4054387764365787664}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1186182123318411827
+      type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        AuthoringAssetID:
+          m_Value0: 3800116050379027502
+          m_Value1: 13973434523228068858
+        m_DebugInfo: {fileID: 0}
+        Root:
+          rid: 1186182123318411828
+        BlackboardReference:
+          rid: 1186182123318411829
+        BlackboardGroupReferences: []
+        m_VersionTimestamp: 638700252133406206
+    - rid: 1186182123318411828
+      type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 18268391366133694596
+          m_Value1: 9814494150587014124
+        Graph:
+          rid: 1186182123318411827
+        m_Parent:
+          rid: -2
+        m_Child:
+          rid: 1186182123318411830
+        Repeat: 1
+    - rid: 1186182123318411829
+      type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Blackboard:
+          rid: 1186182123318411831
+        m_Source: {fileID: -5406462427985245204}
+    - rid: 1186182123318411830
+      type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 1883385501827519680
+          m_Value1: 3059661089259382919
+        Graph:
+          rid: 1186182123318411827
+        m_Parent:
+          rid: 1186182123318411828
+        m_Children:
+        - rid: 1186182123318411832
+        - rid: 1186182123318411833
+    - rid: 1186182123318411831
+      type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Variables:
+        - rid: 1186182123318411834
+        - rid: 1186182123318411835
+        - rid: 1186182123318411836
+        - rid: 1186182123318411837
+    - rid: 1186182123318411832
+      type: {class: DetectorJugadoresAction, ns: , asm: Assembly-CSharp}
+      data:
+        ID:
+          m_Value0: 6191141187711469099
+          m_Value1: 3327609662484257961
+        Graph:
+          rid: 1186182123318411827
+        m_Parent:
+          rid: 1186182123318411830
+        Detecta:
+          rid: 1186182123318411835
+    - rid: 1186182123318411833
+      type: {class: DispararAction, ns: , asm: Assembly-CSharp}
+      data:
+        ID:
+          m_Value0: 6642091567213664191
+          m_Value1: 2322268822482184238
+        Graph:
+          rid: 1186182123318411827
+        m_Parent:
+          rid: 1186182123318411830
+        Agente:
+          rid: 1186182123318411834
+        Detectado:
+          rid: 1186182123318411835
+        Segundos:
+          rid: 1186182123318411838
+        Arma:
+          rid: 1186182123318411837
+    - rid: 1186182123318411834
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 1186182123318411835
+      type: {class: 'BlackboardVariable`1[[DetectorDeJugadores, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 12311073559283035709
+          m_Value1: 6364363407425348202
+        Name: Detecta
+        m_Value: {fileID: 0}
+    - rid: 1186182123318411836
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 12699607657012665064
+          m_Value1: 14296967096193039195
+        Name: Cooldown
+        m_Value: 2
+    - rid: 1186182123318411837
+      type: {class: 'BlackboardVariable`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 14337450960596079947
+          m_Value1: 15249982881825526
+        Name: armaEnemigo
+        m_Value: {fileID: 0}
+    - rid: 1186182123318411838
+      type: {class: FloatToIntBlackboardVariable, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 0
+        m_SourceVariable:
+          rid: 1186182123318411836
+--- !u!114 &-5406462427985245204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
+  m_Name: NaveBehaviourGraph Blackboard Editor
+  m_EditorClassIdentifier: 
+  VersionTimestamp: 638700231324276386
+  AssetID:
+    m_Value0: 3800116050379027502
+    m_Value1: 13973434523228068858
+  m_Blackboard:
+    m_Variables:
+    - rid: 1186182123318411552
+    - rid: 1186182123318411553
+    - rid: 1186182123318411554
+    - rid: 1186182123318411555
+  m_SharedBlackboardVariableGuids: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1186182123318411552
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 1186182123318411553
+      type: {class: 'BlackboardVariable`1[[DetectorDeJugadores, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 12311073559283035709
+          m_Value1: 6364363407425348202
+        Name: Detecta
+        m_Value: {fileID: 0}
+    - rid: 1186182123318411554
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 12699607657012665064
+          m_Value1: 14296967096193039195
+        Name: Cooldown
+        m_Value: 2
+    - rid: 1186182123318411555
+      type: {class: 'BlackboardVariable`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 14337450960596079947
+          m_Value1: 15249982881825526
+        Name: armaEnemigo
+        m_Value: {fileID: 0}
+--- !u!114 &-4054387764365787664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b27bb6d9a2c8d540a10dff10acc543e, type: 3}
+  m_Name: NaveBehaviourGraph Debug Info
+  m_EditorClassIdentifier: 
+  m_CodeBreakPointsList: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad8f2220607dac4db5082ff333fafb8, type: 3}
+  m_Name: NaveBehaviourGraph
+  m_EditorClassIdentifier: 
+  Blackboard: {fileID: 346048285468553675}
+  m_Description: 
+  m_Nodes:
+  - rid: 1186181964693242065
+  - rid: 1186182010357940556
+  - rid: 1186182010357940644
+  - rid: 1186182010357940653
+  m_VersionTimestamp: 638700252133406206
+  m_DebugInfo: {fileID: -4054387764365787664}
+  AssetID:
+    m_Value0: 3800116050379027502
+    m_Value1: 13973434523228068858
+  Story:
+    Story: 
+    StoryVariableNames: []
+    Variables: []
+  m_NodeModelsInfo:
+  - Name: On Start
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 3335272451348827663
+      m_Value1: 11549843281177505721
+    Variables: []
+    NamedChildren: []
+  - Name: DetectorJugadores
+    Story: El agente [detecta] a un enemigo
+    RuntimeTypeID:
+      m_Value0: 10274341011132627323
+      m_Value1: 11908462149370387452
+    Variables:
+    - Name: Detecta
+      Type:
+        m_SerializableType: DetectorDeJugadores, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+  - Name: Disparar
+    Story: 'El [agente] dispara al enemigo [detectado] a cada [segundos] con [arma]'
+    RuntimeTypeID:
+      m_Value0: 7510121864774029660
+      m_Value1: 12542320929604005442
+    Variables:
+    - Name: Agente
+      Type:
+        m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: Detectado
+      Type:
+        m_SerializableType: DetectorDeJugadores, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: Segundos
+      Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: Arma
+      Type:
+        m_SerializableType: UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+  m_Blackboards: []
+  m_CommandBuffer:
+    m_Commands: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1186181964693242065
+      type: {class: StartNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -212.00027, y: -459.19983}
+        ID:
+          m_Value0: 18268391366133694596
+          m_Value1: 9814494150587014124
+        Parents: []
+        PortModels:
+        - rid: 1186181964693242066
+        NodeType:
+          m_SerializableType: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 3335272451348827663
+          m_Value1: 11549843281177505721
+        m_FieldValues: []
+        Repeat: 1
+    - rid: 1186181964693242066
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1186181964693242065
+        m_Connections:
+        - rid: 1186182010357940654
+    - rid: 1186182010357940556
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -198.69983, y: -322.39984}
+        ID:
+          m_Value0: 6191141187711469099
+          m_Value1: 3327609662484257961
+        Parents:
+        - rid: 1186182010357940653
+        PortModels:
+        - rid: 1186182010357940557
+        - rid: 1186182010357940558
+        NodeType:
+          m_SerializableType: DetectorJugadoresAction, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 10274341011132627323
+          m_Value1: 11908462149370387452
+        m_FieldValues:
+        - rid: 1186182010357940559
+    - rid: 1186182010357940557
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1186182010357940556
+        m_Connections: []
+    - rid: 1186182010357940558
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1186182010357940556
+        m_Connections: []
+    - rid: 1186182010357940559
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Detecta
+        Type:
+          m_SerializableType: DetectorDeJugadores, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1186182010357940560
+        LinkedVariable:
+          rid: 1186182123318411787
+    - rid: 1186182010357940560
+      type: {class: 'BlackboardVariable`1[[DetectorDeJugadores, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1186182010357940644
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -185.15004, y: -307.1991}
+        ID:
+          m_Value0: 6642091567213664191
+          m_Value1: 2322268822482184238
+        Parents:
+        - rid: 1186182010357940653
+        PortModels:
+        - rid: 1186182010357940645
+        - rid: 1186182010357940646
+        NodeType:
+          m_SerializableType: DispararAction, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 7510121864774029660
+          m_Value1: 12542320929604005442
+        m_FieldValues:
+        - rid: 1186182010357940647
+        - rid: 1186182010357940648
+        - rid: 1186182010357940926
+        - rid: 1186182032612655530
+    - rid: 1186182010357940645
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1186182010357940644
+        m_Connections: []
+    - rid: 1186182010357940646
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1186182010357940644
+        m_Connections: []
+    - rid: 1186182010357940647
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Agente
+        Type:
+          m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1186182010357940650
+        LinkedVariable:
+          rid: 1186182123318411788
+    - rid: 1186182010357940648
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Detectado
+        Type:
+          m_SerializableType: DetectorDeJugadores, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1186182010357940651
+        LinkedVariable:
+          rid: 1186182123318411787
+    - rid: 1186182010357940650
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1186182010357940651
+      type: {class: 'BlackboardVariable`1[[DetectorDeJugadores, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1186182010357940653
+      type: {class: SequenceNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: -172.29974, y: -351.19983}
+        ID:
+          m_Value0: 1883385501827519680
+          m_Value1: 3059661089259382919
+        Parents: []
+        PortModels:
+        - rid: 1186182010357940654
+        - rid: 1186182010357940655
+        Nodes:
+        - rid: 1186182010357940556
+        - rid: 1186182010357940644
+    - rid: 1186182010357940654
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1186182010357940653
+        m_Connections:
+        - rid: 1186181964693242066
+    - rid: 1186182010357940655
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1186182010357940653
+        m_Connections: []
+    - rid: 1186182010357940926
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Segundos
+        Type:
+          m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 1186182010357940929
+        LinkedVariable:
+          rid: 1186182123318411789
+    - rid: 1186182010357940929
+      type: {class: 'BlackboardVariable`1[[System.Int32, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 0
+    - rid: 1186182032612655530
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Arma
+        Type:
+          m_SerializableType: UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1186182032612655534
+        LinkedVariable:
+          rid: 1186182123318411790
+    - rid: 1186182032612655534
+      type: {class: 'BlackboardVariable`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1186182123318411787
+      type: {class: 'TypedVariableModel`1[[DetectorDeJugadores, Assembly-CSharp]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 12311073559283035709
+          m_Value1: 6364363407425348202
+        Name: Detecta
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 1186182123318411788
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 1186182123318411789
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 12699607657012665064
+          m_Value1: 14296967096193039195
+        Name: Cooldown
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 2
+    - rid: 1186182123318411790
+      type: {class: 'TypedVariableModel`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 14337450960596079947
+          m_Value1: 15249982881825526
+        Name: armaEnemigo
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+--- !u!114 &346048285468553675
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd922ae02c94c87a66e46a10a7319b9, type: 3}
+  m_Name: NaveBehaviourGraph Blackboard Editor
+  m_EditorClassIdentifier: 
+  AssetID:
+    m_Value0: 3800116050379027502
+    m_Value1: 13973434523228068858
+  m_Variables:
+  - rid: 1186181964693242075
+  - rid: 1186182010357940477
+  - rid: 1186182010357940968
+  - rid: 1186182032612655500
+  m_VersionTimestamp: 638700231324276386
+  m_CommandBuffer:
+    m_Commands: []
+  m_RuntimeBlackboardAsset: {fileID: -5406462427985245204}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1186181964693242075
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 1186182010357940477
+      type: {class: 'TypedVariableModel`1[[DetectorDeJugadores, Assembly-CSharp]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 12311073559283035709
+          m_Value1: 6364363407425348202
+        Name: Detecta
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 1186182010357940968
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 12699607657012665064
+          m_Value1: 14296967096193039195
+        Name: Cooldown
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 2
+    - rid: 1186182032612655500
+      type: {class: 'TypedVariableModel`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 14337450960596079947
+          m_Value1: 15249982881825526
+        Name: armaEnemigo
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}

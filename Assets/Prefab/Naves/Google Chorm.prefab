@@ -70,6 +70,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8546097770738294763, guid: 180883df1673639459be1f5b413c0633, type: 3}
+      propertyPath: managedReferences[1186182032612655794].m_Value
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 483659775043542460, guid: 180883df1673639459be1f5b413c0633, type: 3}
       propertyPath: puntosGanados
       value: 75
@@ -81,6 +85,18 @@ PrefabInstance:
     - target: {fileID: 763042581919826940, guid: 180883df1673639459be1f5b413c0633, type: 3}
       propertyPath: m_Name
       value: Google Chorm
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937838503198971793, guid: 180883df1673639459be1f5b413c0633, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937838503198971793, guid: 180883df1673639459be1f5b413c0633, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2396081135998305306, guid: 180883df1673639459be1f5b413c0633, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4261493034587030923, guid: 180883df1673639459be1f5b413c0633, type: 3}
       propertyPath: m_LocalScale.x
@@ -96,7 +112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4261493034587030923, guid: 180883df1673639459be1f5b413c0633, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -27.97
       objectReference: {fileID: 0}
     - target: {fileID: 4261493034587030923, guid: 180883df1673639459be1f5b413c0633, type: 3}
       propertyPath: m_LocalPosition.y

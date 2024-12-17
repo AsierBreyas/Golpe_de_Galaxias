@@ -10,9 +10,17 @@ public class Enemigo : MonoBehaviour
     int puntosGanados = 1;
     [SerializeField]
     AudioClip matarEnemigo;
+    [SerializeField]
+    ParticleSystem arma;
+    private void Start()
+    {
+        var emmisionModule = arma.emission;
+        emmisionModule.enabled = false;
+    }
     private void OnParticleCollision(GameObject other)
     {
-        ProcesarGorpe();
+        if(other.tag == "Arma")
+            ProcesarGorpe();
         
     }
     void ProcesarGorpe()
